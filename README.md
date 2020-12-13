@@ -14,7 +14,9 @@ One of the biggest problems that many companies have been battleling is how to t
 The hotel's subsector has been trying to find ways to analyze the reviews and find ways to improve their business based on their guests experiences. Some hotels can receive thousands of guests every week and hundreds of reviews. It becomes nearly impossible for hotels to keep track of the reviews and find out areas where they need to improve and understand what they are doing right, so they can make sure that they can keep it up.
 
 Question 1
+
 Question 2
+
 Question 3
 
 ## Data and Methods
