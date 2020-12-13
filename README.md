@@ -1,6 +1,6 @@
 # Hotel Review Analysis Using NLP and Machine Learning
 
-![Photo by Martin Péchy from Pexels](https://github.com/Ismaeltrevi/capstone-project/blob/main/images/hotel-image.jpg?raw=true "Photo by Martin Péchy from Pexels")
+![Photo by Martin Péchy from Pexels](https://github.com/Ismaeltrevi/capstone-project/blob/main/visualizations/hotel-image.jpg?raw=true "Photo by Martin Péchy from Pexels")
 
 ##### This project is expected to be concluded on January 6, 2021.
 
