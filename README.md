@@ -68,3 +68,4 @@ Campos, D., Rocha Silva, R., and Bernadino, J., 2019. Text Mining in Hotel Revie
 
 
 
+ 
