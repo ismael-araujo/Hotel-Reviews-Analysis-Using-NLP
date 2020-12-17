@@ -42,10 +42,22 @@ The dataset for this project was originally used in the study Text Mining in Hot
 |lat   |The latitude of the hotel   |
 |lng   |The longitude of the hotel   |
 
+#### Libraries Used
+
+|Used for |Libraries   |
+| ------------ | ------------ |
+|Cleaning and EDA   | pandas, nltk, matplotlib, seaborn, string, wordcloud, numpy, pickle, geopy  |
+|Modeling   | pandas, matplotlib, sklearn, pickle  |
+|Custom Functions   |matplotlib, numpy, pandas, sklearn, xgboost   |
+
+
+
 ## Challenges
 The data set was quite organized. However, it had a few challenges. For example, the review was divided between positive and negative reviews. Although this is useful for specific cases, most reviews will not be separated by positive and negative reviews. Thus, creating a model that is able to idenfity positive and negative reviews could be useless if we add reviews that are not separated. Other uses for the model, such as using it in social media would not work. A solution was merging the together.
 
 Other big challenge with dataset is that the address is a long string, which means that is difficult to collect information such as city and country due to the different formats which is written. This problem was solved grabbing the city and country of the hotel using Geopy.
+
+
 
 ## Results
 ### Exploratory Data Analysis
@@ -69,3 +81,4 @@ Campos, D., Rocha Silva, R., and Bernadino, J., 2019. Text Mining in Hotel Revie
 
 
  
+
