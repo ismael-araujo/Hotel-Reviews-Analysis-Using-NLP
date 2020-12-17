@@ -20,8 +20,9 @@ For these reasons, here are a few questions that I will try to answer with this 
 3. How is a specific hotel compared to the other hotels in the same city? Can we find more information about the guests based on their review?
 
 ## Data and Methods
-The dataset for this project was originally used in the study Text Mining in Hotel Reviews: Impact of Words Restriction in Text Classification by Diego Campos, Rodrigo Rocha Silva, and Jorge Bernadino and a team at University of Coimbra. You can find the paper [here](https://www.researchgate.net/publication/336224346_Text_Mining_in_Hotel_Reviews_Impact_of_Words_Restriction_in_Text_Classification "here"). The raw dataset is from [Kaggle](https://www.kaggle.com/jiashenliu/515k-hotel-reviews-data-in-europe/data "Kaggle"). You can read information about the columns below.
+The dataset for this project was originally used in the study Text Mining in Hotel Reviews: Impact of Words Restriction in Text Classification by Diego Campos, Rodrigo Rocha Silva, and Jorge Bernadino and a team at University of Coimbra. You can find the paper [here](https://www.researchgate.net/publication/336224346_Text_Mining_in_Hotel_Reviews_Impact_of_Words_Restriction_in_Text_Classification "here"). The raw dataset is from [Kaggle](https://www.kaggle.com/jiashenliu/515k-hotel-reviews-data-in-europe/data "Kaggle"). 
 
+#### Dataset Features
 | Column Name  | Description  |
 | ------------ | ------------ |
 |Hotel_Address   | The full address of the hotel  |
@@ -42,10 +43,22 @@ The dataset for this project was originally used in the study Text Mining in Hot
 |lat   |The latitude of the hotel   |
 |lng   |The longitude of the hotel   |
 
+#### Libraries Used
+
+|Used for |Libraries   |
+| ------------ | ------------ |
+|Cleaning and EDA   | pandas, nltk, matplotlib, seaborn, string, wordcloud, numpy, pickle, geopy  |
+|Modeling   | pandas, matplotlib, sklearn, pickle  |
+|Custom Functions   |matplotlib, numpy, pandas, sklearn, xgboost   |
+
+
+
 ## Challenges
 The data set was quite organized. However, it had a few challenges. For example, the review was divided between positive and negative reviews. Although this is useful for specific cases, most reviews will not be separated by positive and negative reviews. Thus, creating a model that is able to idenfity positive and negative reviews could be useless if we add reviews that are not separated. Other uses for the model, such as using it in social media would not work. A solution was merging the together.
 
 Other big challenge with dataset is that the address is a long string, which means that is difficult to collect information such as city and country due to the different formats which is written. This problem was solved grabbing the city and country of the hotel using Geopy.
+
+
 
 ## Results
 ### Exploratory Data Analysis
@@ -69,3 +82,4 @@ Campos, D., Rocha Silva, R., and Bernadino, J., 2019. Text Mining in Hotel Revie
 
 
  
+
