@@ -90,10 +90,14 @@ Reviewers from the United Kingdom have the highest number of reviews left. To un
 
 ![](https://github.com/Ismaeltrevi/hotel-reviews-analysis-using-nlp/blob/main/images/score-density-hotel-vs-london.png?raw=true)
 
-As we can see above, the Britannia International Hotel Canary Wharf underperform compared to other hotels in London. While the hotels in London have the score density skewed to the right where the positive scores are, Britannia International Hotel Canary Wharf is closer to a evenly distribution, where the amount of negative reviews are as high as the negative reviews.
+As we can see above, the Britannia International Hotel Canary Wharf underperform compared to other hotels in London. While the hotels in London have the score density skewed to the right where the positive scores are, Britannia International Hotel Canary Wharf is closer to a evenly distribution, where the amount of negative reviews are as high as the negative reviews. This tells as the the hotel has a lot to improve.
+
 
 ## Results
+For the results section, I had two question in mind
 
+**1. What words appear the most in positive and negative reviews? **
+**2. Can we get any insights from it?**
 
 
 ## Final Recommendations
@@ -110,7 +114,7 @@ Twitter: https://twitter.com/ish_araujo
 
 ## References
 Campos, D., Rocha Silva, R., and Bernadino, J., 2019. Text Mining in Hotel Reviews: Impact of Words Restriction in Text Classification. University of Coimbra, Coimbra, Portugal.
- 
+
 
 
  
