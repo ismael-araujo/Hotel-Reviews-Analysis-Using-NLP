@@ -1,5 +1,9 @@
 # Hotel Review Analysis Using NLP and Machine Learning
 
+#### Can hotels easily get insights out of thousand of reviews?
+
+##### Author:  Ismael Araujo
+
 ![](https://github.com/Ismaeltrevi/hotel-reviews-analysis-using-nlp/blob/main/images/hotel-image.jpg?raw=true)
 
 ##### This project is expected to be concluded on January 6, 2021.
