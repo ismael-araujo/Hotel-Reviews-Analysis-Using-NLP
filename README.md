@@ -96,12 +96,20 @@ As we can see above, the Britannia International Hotel Canary Wharf underperform
 ## Results
 For the results section, I had two question in mind:
 
-**- What words appear the most in positive and negative reviews? **
-**- Can we get any insights from it?**
+- What words appear the most in positive and negative reviews?
+- Can we get any insights from it?
 
 To get these answers, I had to clean the data through different steps. You can see more details of each step  in the [Data Cleaning notebook](https://github.com/Ismaeltrevi/hotel-reviews-analysis-using-nlp/blob/main/preprossessing/data-cleaning.ipynb "Data Cleaning notebook"). Now let's check the word clouds and see if we can get insights from it.
 
-First, the word cloud made with the positive reviews:
+Below we can see the positive reviews word cloud. Note that you can relate every word to things that you could image coming from a hotel review. For example, we can see the words location, clean, comfortable, staff, service, price, and room. We can certainly assure that these are high points to the hotel and they can use these words to promote the hotel.
+
+![](https://github.com/Ismaeltrevi/hotel-reviews-analysis-using-nlp/blob/main/images/positive_wordcloud.png?raw=true)
+
+On the other hand, looking at the negative reviews word cloud, we can see many words that could be points for improvement to the hotel. Staff seems it’s mentioned multiple times as well as the word rude and reception. Maybe the staff was rude to these guests? We can also see the words old, dated, dirty, and uncomfortable, which could be points of attention to the management.
+
+![](https://github.com/Ismaeltrevi/hotel-reviews-analysis-using-nlp/blob/main/images/negative_wordcloud.png?raw=true)
+
+
 
 
 ## Final Recommendations
