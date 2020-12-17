@@ -86,7 +86,7 @@ Reviewers from the United Kingdom have the highest number of reviews left. To un
 
 ![](https://github.com/Ismaeltrevi/hotel-reviews-analysis-using-nlp/blob/main/images/countries-hotels.png?raw=true)
 
-**2. How does the hotel which I will focus on perform compared to other hotels in London?**
+**How does the hotel which I will focus on perform compared to other hotels in London?**
 
 ![](https://github.com/Ismaeltrevi/hotel-reviews-analysis-using-nlp/blob/main/images/score-density-hotel-vs-london.png?raw=true)
 
@@ -94,10 +94,14 @@ As we can see above, the Britannia International Hotel Canary Wharf underperform
 
 
 ## Results
-For the results section, I had two question in mind
+For the results section, I had two question in mind:
 
-**1. What words appear the most in positive and negative reviews? **
-**2. Can we get any insights from it?**
+**- What words appear the most in positive and negative reviews? **
+**- Can we get any insights from it?**
+
+To get these answers, I had to clean the data through different steps. You can see more details of each step  in the [Data Cleaning notebook](https://github.com/Ismaeltrevi/hotel-reviews-analysis-using-nlp/blob/main/preprossessing/data-cleaning.ipynb "Data Cleaning notebook"). Now let's check the word clouds and see if we can get insights from it.
+
+First, the word cloud made with the positive reviews:
 
 
 ## Final Recommendations
