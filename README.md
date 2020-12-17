@@ -1,6 +1,6 @@
 # Hotel Review Analysis Using NLP and Machine Learning
 
-![Photo by Martin Péchy from Pexels](https://github.com/Ismaeltrevi/capstone-project/blob/main/visualizations/hotel-image.jpg?raw=true "Photo by Martin Péchy from Pexels")
+![](https://github.com/Ismaeltrevi/hotel-reviews-analysis-using-nlp/blob/main/images/hotel-image.jpg?raw=true)
 
 ##### This project is expected to be concluded on January 6, 2021.
 
@@ -20,7 +20,7 @@ For these reasons, here are a few questions that I will try to answer with this 
 3. How is a specific hotel compared to the other hotels in the same city? Can we find more information about the guests based on their review?
 
 ## Data and Methods
-The dataset for this project was originally used in the study Text Mining in Hotel Reviews: Impact of Words Restriction in Text Classification by Diego Campos, Rodrigo Rocha Silva, and Jorge Bernadino and a team at University of Coimbra. You can find the paper [here](https://www.researchgate.net/publication/336224346_Text_Mining_in_Hotel_Reviews_Impact_of_Words_Restriction_in_Text_Classification "here"). The raw dataset is from [Kaggle](https://www.kaggle.com/jiashenliu/515k-hotel-reviews-data-in-europe/data "Kaggle"). 
+The dataset for this project was originally used in the study Text Mining in Hotel Reviews: Impact of Words Restriction in Text Classification by Diego Campos, Rodrigo Rocha Silva, and Jorge Bernadino and a team at University of Coimbra. You can find the paper [here](https://www.researchgate.net/publication/336224346_Text_Mining_in_Hotel_Reviews_Impact_of_Words_Restriction_in_Text_Classification "here"). The raw dataset is from [Kaggle](https://www.kaggle.com/jiashenliu/515k-hotel-reviews-data-in-europe/data "Kaggle"). Since some datasets were large, you can download the cvs files [here](https://drive.google.com/drive/folders/1mjoGF17DR8bcqLhHQ78IqXgY81rSonVM?usp=sharing "here"). The original dataset had 515,738 observations and 17 columns.
 
 #### Dataset Features
 | Column Name  | Description  |
@@ -82,4 +82,5 @@ Campos, D., Rocha Silva, R., and Bernadino, J., 2019. Text Mining in Hotel Revie
 
 
  
+
 
