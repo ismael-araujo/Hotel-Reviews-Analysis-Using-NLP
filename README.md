@@ -118,8 +118,25 @@ On the other hand, looking at the negative reviews word cloud, we can see many w
 
 ![](https://github.com/Ismaeltrevi/hotel-reviews-analysis-using-nlp/blob/main/images/negative_wordcloud.png?raw=true)
 
+# Modeling Process
+
+For the modeling process, I chose multiple models, testing them with different vectorizer and in different stages of data cleaning. For the baseline models, I ran Logistic Regression, Random Forest, Naive Bayes, and Support Vector Machine.
+
+I tried the vanilla models with the datasets vectorized with CountVectorizer, TF-IDF. I also tried these models with and without lemmatization. I did not include other features such as name of the hotel or location because the main objective is train a model using the reviews only.
 
 ## Results
+
+The best model was a GridSearch SVC. We can see the metrics below:
+
+|Best Model  |Accuracy  |Precision   |Recall   |F1-Score   |
+| ------------ | ------------ | ------------ | ------------ | ------------ |
+|GridSearch SVC   |0.826827   |0.867271   |0.786148   |0.824719   |
+
+Although I was looking for a high accuracy, the F1-Score is also very important, because I want to correctly classify reviews that need special attention. In this case, the negative reviews.
+
+![](https://github.com/Ismaeltrevi/hotel-reviews-analysis-using-nlp/blob/main/images/confusion-matrix-ensemble-model.png?raw=true)
+
+As we can see,  the GridSearch SVC was able to predict correctly 85.13% of the positive reviews and 72.79%. It definitely have room for improvement, but it's a good result for this stage of the project.
 
 ## Final Recommendations
 
