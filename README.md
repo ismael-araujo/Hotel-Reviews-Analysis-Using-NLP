@@ -110,7 +110,7 @@ Twitter: https://twitter.com/ish_araujo
 
 ## References
 Campos, D., Rocha Silva, R., and Bernadino, J., 2019. Text Mining in Hotel Reviews: Impact of Words Restriction in Text Classification. University of Coimbra, Coimbra, Portugal.
-
+ 
 
 
  
