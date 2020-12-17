@@ -76,15 +76,21 @@ We can see above that the class distribution problem was solved.
 ### Exploratory Data Analysis
 I wanted a few answer from the dataset and check if I could find any patterns. Thus, I had questions, which I will answer right next:
 
-1. What nationalities give the highest number of reviews?
+**What nationalities give the highest number of reviews?**
 
 ![](https://github.com/Ismaeltrevi/hotel-reviews-analysis-using-nlp/blob/main/images/nationality.png?raw=true)
 
 Reviewers from the United Kingdom have the highest number of reviews left. To understand the main reason behind this, I checked where the hotels with the highest reviews are located. In the next image we can understand two things:
-1. The hotels are located in only 6 countries only, not the whole Europe, as I previously thought.
-2. The reviewers are mostly from the UK (over 50%), which explain the higher number of people from the UK giving reviews.
+- The hotels are located in only 6 countries only, not the whole Europe, as I previously thought.
+- The reviewers are mostly from the UK (over 50%), which explain the higher number of people from the UK giving reviews.
 
 ![](https://github.com/Ismaeltrevi/hotel-reviews-analysis-using-nlp/blob/main/images/countries-hotels.png?raw=true)
+
+**2. How does the hotel which I will focus on perform compared to other hotels in London?**
+
+![](https://github.com/Ismaeltrevi/hotel-reviews-analysis-using-nlp/blob/main/images/score-density-hotel-vs-london.png?raw=true)
+
+As we can see above, the Britannia International Hotel Canary Wharf underperform compared to other hotels in London. While the hotels in London have the score density skewed to the right where the positive scores are, Britannia International Hotel Canary Wharf is closer to a evenly distribution, where the amount of negative reviews are as high as the negative reviews.
 
 ## Results
 
