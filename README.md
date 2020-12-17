@@ -58,6 +58,14 @@ The data set was quite organized. However, it had a few challenges. For example,
 
 Other big challenge with dataset is that the address is a long string, which means that is difficult to collect information such as city and country due to the different formats which is written. This problem was solved grabbing the city and country of the hotel using Geopy.
 
+## Data Understanding
+Data understanding was a very interesting step in this project. I was able to understand the dataset. First thing I noticed was that the dataset was very large. This could be a problem when modeling. Thus, for the MVP, I decided to use only 20% of the dataset.
+
+Since I had a classification problem, I first created a target feature with the score. In this step I noticed that the lowest score was 2.5 and the highest was 10. Since there were users who wrote that there was anything good about the hotel, I assume that 2.5 was actually given by Booking.com, not the user. Then I converted the score into a classification problem. Since 2.5 was the lowest and 10 the highest, I decided to dived the target in two: positive and negative, where anything below 6 was negative and 6 and above was positive. 6.25 would be the middle point, so I decided to go with 6.
+
+### Class Distribution
+![Class Distribution - Before](https://github.com/Ismaeltrevi/hotel-reviews-analysis-using-nlp/blob/main/images/class_distribution-before.png?raw=true "Class Distribution - Before")
+We can see above that the classes are not evenly distributed
 
 
 ## Results
@@ -82,5 +90,6 @@ Campos, D., Rocha Silva, R., and Bernadino, J., 2019. Text Mining in Hotel Revie
 
 
  
+
 
 
