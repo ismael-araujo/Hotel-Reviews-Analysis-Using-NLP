@@ -62,6 +62,13 @@ The data set was quite organized. However, it had a few challenges. For example,
 
 Other big challenge with dataset is that the address is a long string, which means that is difficult to collect information such as city and country due to the different formats which is written. This problem was solved grabbing the city and country of the hotel using Geopy.
 
+## Data Cleaning
+As in any NLP project, the data cleaning is the most important step. We need to make sense of the information we have and create features for the models only with the information that matters. A few cleaning steps that I took were: 
+- Remove any puntuations, stop words, and numbers
+- Fix the spelling using TextBlob
+- Lemmatization
+- Remove words from the word clouds that didn't help with insights, such as complimentatory adjectives (great, good, nice, excelent, etc.)
+
 ## Data Understanding
 Data understanding was a very interesting step in this project. I was able to understand the dataset. First thing I noticed was that the dataset was very large. This could be a problem when modeling. Thus, for the MVP, I decided to use only 20% of the dataset.
 
