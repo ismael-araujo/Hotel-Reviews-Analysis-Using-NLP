@@ -163,18 +163,18 @@ As we can see,  the GridSearch SVC was able to predict correctly 85.13% of the p
 
 
 ```
-├── csv                             # contains csv files used in the project
+├── csv                                     # contains csv files used in the project
 ├── functions                             # contains functions applied in the notebook
-├── images                  # contains all the images used in this README.md and in the final notebook
-├── models                      # contains model iterations
-│   ├── baseline-models.ipynb            # contains baseline models
-│   ├── ensemble-models.ipynb          # contains ensemble models and final model
-├── pickle                                # contains pickle files
-├── preprocessing                     # contains preprocessing notebooks
-│   ├── data-cleaning.ipynb            # contains data cleaning process
-│   ├── eda.ipynb          # contains eda process
-│   ├── geocoding.ipynb         # contains feature engineering using geopy
-│   ├── sentiment-analysis.ipynb # contains sentiment analysis notebook
+├── images                                # contains all the images used in this README.md and in the final notebook
+├── models                                # contains model iterations
+│   ├── baseline-models.ipynb     # contains baseline models
+│   ├── ensemble-models.ipynb   # contains ensemble models and final model
+├── pickle                                  # contains pickle files
+├── preprocessing                       # contains preprocessing notebooks
+│   ├── data-cleaning.ipynb         # contains data cleaning process
+│   ├── eda.ipynb                       # contains eda process
+│   ├── geocoding.ipynb              # contains feature engineering using geopy
+│   ├── sentiment-analysis.ipynb  # contains sentiment analysis notebook
 ├── README.md                          # public-facing preview
 ├── final_notebook.ipynb               # final version of data cleaning, EDA, feature engineering, and modeing process
 └── presentation.pdf    # deck
