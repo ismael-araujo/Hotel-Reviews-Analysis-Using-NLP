@@ -181,9 +181,10 @@ As we can see,  the GridSearch SVC was able to predict correctly 85.13% of the p
 ```
 ## For More Information or Suggestions
 If you have any questions or suggestions, please reach me out on:
-Email: alves.trevi@gmail.com
-LinkedIn: https://www.linkedin.com/in/ismael-araujo/
-Twitter: https://twitter.com/ish_araujo
+
+- Email: alves.trevi@gmail.com
+- LinkedIn: https://www.linkedin.com/in/ismael-araujo/
+- Twitter: https://twitter.com/ish_araujo
 
 
 ## References
