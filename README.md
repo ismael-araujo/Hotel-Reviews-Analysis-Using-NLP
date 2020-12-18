@@ -9,13 +9,14 @@
 ##### This project is expected to be concluded on January 6, 2021.
 
 ## Overview
+In this project, we will create a model that is able to predict if a hotel review is negative or positive. We will walk through multiple Natural Language Processing to understand how we can use machines to read for us and how we can get insights out of it.
 
 
 
 ## Business Problem
 One of the biggest problems that many companies have been battleling is how to take advantage of all the data that is collected by them. The travel industry has been challenged by the amount of data. One of the types of data is reviews left by guests in websites such as Booking.com, TripAdvisor, and Yelp.
 
-Hotels have been trying to find ways to analyze the reviews and get insights out of it. However, some hotels can receive thousands of guests every week and hundreds of reviews. It becomes nearly impossible and expensive for hotels to keep track of the reviews. Thus, multiple hotels might negligete these valuable data due to the cost and energy that need to be allocated.
+Hotels have been trying to find ways to analyze the reviews and get insights out of it. However, some hotels can receive thousands of guests every week and hundreds of reviews. It becomes nearly impossible and expensive for hotels to keep track of the reviews. Thus, multiple hotels might negligete these valuable data due to the cost and energy that need to be allocated. That's exactly what this project will solve.
 
 For these reasons, here are a few questions that I will try to answer with this project:
 
@@ -23,10 +24,10 @@ For these reasons, here are a few questions that I will try to answer with this 
 2. Can NLP be used to create a useful word cloud with the the positive and negative reviews?
 3. How is a specific hotel compared to the other hotels in the same city? Can we find more information about the guests based on their review?
 
-As a stretch goal, once we have a model that can predict with some accuracy when reviews are positive or negative, we will be able to use the model in any website that contains hotel reviews and social media. 
+As a stretch goal, once we have a model that can predict with some accuracy when reviews are positive or negative, we will be able to use the model in any website that contains hotel reviews and social media.
 
 ## Data and Methods
-The dataset for this project was originally used in the study Text Mining in Hotel Reviews: Impact of Words Restriction in Text Classification by Diego Campos, Rodrigo Rocha Silva, and Jorge Bernadino and a team at University of Coimbra. You can find the paper [here](https://www.researchgate.net/publication/336224346_Text_Mining_in_Hotel_Reviews_Impact_of_Words_Restriction_in_Text_Classification "here"). The raw dataset is from [Kaggle](https://www.kaggle.com/jiashenliu/515k-hotel-reviews-data-in-europe/data "Kaggle"). Since some datasets were large, you can download the cvs files [here](https://drive.google.com/drive/folders/1mjoGF17DR8bcqLhHQ78IqXgY81rSonVM?usp=sharing "here"). The original dataset had 515,738 observations and 17 columns.
+The dataset for this project was originally used in the study Text Mining in Hotel Reviews: Impact of Words Restriction in Text Classification by Diego Campos, Rodrigo Rocha Silva, and Jorge Bernadino and a team at University of Coimbra. You can find the paper [here](https://www.researchgate.net/publication/336224346_Text_Mining_in_Hotel_Reviews_Impact_of_Words_Restriction_in_Text_Classification "here"). The raw dataset is from [Kaggle](https://www.kaggle.com/jiashenliu/515k-hotel-reviews-data-in-europe/data "Kaggle"). Since some datasets were large, you can download the cvs files [here](https://drive.google.com/drive/folders/1mjoGF17DR8bcqLhHQ78IqXgY81rSonVM?usp=sharing "here"). The original dataset had 515,738 observations and 17 columns. It's important to mention that this dataset was collected from Booking.com, a website where you can book hotels. It's a great dataset because it contains real reviews that we can use to train our model so that our model will be able to read real-life reviews and predict if they are good or bad.
 
 #### Dataset Features
 | Column Name  | Description  |
@@ -159,6 +160,23 @@ As we can see,  the GridSearch SVC was able to predict correctly 85.13% of the p
 - Create a dashboard for guests and hotels easily get information about hotels.
 
 ## Repository Content
+
+.
+├── csv                             # contains csv files used in the project
+├── functions                             # contains functions applied in the notebook
+├── images                  # contains all the images used in this README.md and in the final notebook
+├── models                      # contains model iterations
+│   ├── baseline-models.ipynb            # contains baseline models
+│   ├── ensemble-models.ipynb          # contains ensemble models and final model
+├── pickle                                # contains pickle files
+├── preprocessing                     # contains preprocessing notebooks
+│   ├── data-cleaning.ipynb            # contains data cleaning process
+│   ├── eda.ipynb          # contains eda process
+│   ├── geocoding.ipynb         # contains feature engineering using geopy
+│   ├── sentiment-analysis.ipynb # contains sentiment analysis notebook
+├── README.md                          # public-facing preview
+├── final_notebook.ipynb               # final version of data cleaning, EDA, feature engineering, and modeing process
+└── presentation.pdf    # deck
 
 ## For More Information or Suggestions
 If you have any questions or suggestions, please reach me out on:
