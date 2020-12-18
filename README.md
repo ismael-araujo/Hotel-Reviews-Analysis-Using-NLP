@@ -161,7 +161,8 @@ As we can see,  the GridSearch SVC was able to predict correctly 85.13% of the p
 
 ## Repository Content
 
-.
+
+```
 ├── csv                             # contains csv files used in the project
 ├── functions                             # contains functions applied in the notebook
 ├── images                  # contains all the images used in this README.md and in the final notebook
@@ -183,6 +184,7 @@ If you have any questions or suggestions, please reach me out on:
 Email: alves.trevi@gmail.com
 LinkedIn: https://www.linkedin.com/in/ismael-araujo/
 Twitter: https://twitter.com/ish_araujo
+```
 
 ## References
 Campos, D., Rocha Silva, R., and Bernadino, J., 2019. Text Mining in Hotel Reviews: Impact of Words Restriction in Text Classification. University of Coimbra, Coimbra, Portugal.
