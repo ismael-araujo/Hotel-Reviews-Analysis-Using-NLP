@@ -139,8 +139,22 @@ Although I was looking for a high accuracy, the F1-Score is also very important,
 As we can see,  the GridSearch SVC was able to predict correctly 85.13% of the positive reviews and 72.79%. It definitely have room for improvement, but it's a good result for this stage of the project.
 
 ## Final Recommendations
+- Use machine learning models to quickly identify negative and positive reviews without having to read all of them.
+- Use word clouds to get quick insights from negative and positive reviews. The negative reviews can be used to improve the business and positive reviews can be used for advertisement, for example.
 
 ## Conclusion
+
+- Machine learning can be used to correctly identify positive and negative reviews. However, identify with 100% confidence would be extremely difficult.
+- Word clouds can be used to understand what words appear the most in negative and positive reviews. The management can quickly take a look and get insights out of it.
+- The Britannia International Hotel Canary Wharf performes poorly in the reviews compared to other hotels in London. There is a lot of room for improvement.
+
+## Next Steps:
+
+- Test the model in the whole data set
+- Use the features of the model with the highest coeficcient to understand which words can predict better if a review is good or not and test
+- Use the features with the highest coeficcient to predict if posts in social media are positive or negative
+- Create a recommendation system to the user based on reviews
+- Create a dashboard for guests and hotels easily get information about hotels.
 
 ## Repository Content
 
@@ -152,10 +166,3 @@ Twitter: https://twitter.com/ish_araujo
 
 ## References
 Campos, D., Rocha Silva, R., and Bernadino, J., 2019. Text Mining in Hotel Reviews: Impact of Words Restriction in Text Classification. University of Coimbra, Coimbra, Portugal.
-
-
-
- 
-
-
-
