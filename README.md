@@ -23,6 +23,8 @@ For these reasons, here are a few questions that I will try to answer with this 
 2. Can NLP be used to create a useful word cloud with the the positive and negative reviews?
 3. How is a specific hotel compared to the other hotels in the same city? Can we find more information about the guests based on their review?
 
+As a stretch goal, once we have a model that can predict with some accuracy when reviews are positive or negative, we will be able to use the model in any website that contains hotel reviews and social media. 
+
 ## Data and Methods
 The dataset for this project was originally used in the study Text Mining in Hotel Reviews: Impact of Words Restriction in Text Classification by Diego Campos, Rodrigo Rocha Silva, and Jorge Bernadino and a team at University of Coimbra. You can find the paper [here](https://www.researchgate.net/publication/336224346_Text_Mining_in_Hotel_Reviews_Impact_of_Words_Restriction_in_Text_Classification "here"). The raw dataset is from [Kaggle](https://www.kaggle.com/jiashenliu/515k-hotel-reviews-data-in-europe/data "Kaggle"). Since some datasets were large, you can download the cvs files [here](https://drive.google.com/drive/folders/1mjoGF17DR8bcqLhHQ78IqXgY81rSonVM?usp=sharing "here"). The original dataset had 515,738 observations and 17 columns.
 
