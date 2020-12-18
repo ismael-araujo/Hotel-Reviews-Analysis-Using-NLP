@@ -121,7 +121,15 @@ On the other hand, looking at the negative reviews word cloud, we can see many w
 
 ![](https://github.com/Ismaeltrevi/hotel-reviews-analysis-using-nlp/blob/main/images/negative_wordcloud.png?raw=true)
 
-# Modeling Process
+## Sentiment Analysis
+
+In this step we will create a sentiment analysis and compare the performance the actual score that users give. I want to visualize if the sentiment analysis can do a better job analysing when a review is negative or positive.
+
+![](https://github.com/Ismaeltrevi/hotel-reviews-analysis-using-nlp/blob/main/images/sentiment_analysis.png?raw=true)
+
+The graph above shows that the sentiment analysis does a good job identifying positive reviews with a positive polarity. However, it does not perform as well with the negative reviews. We can see that there is a big number of neutral reviews where sentiment analysis couldn't understand if the review was positive or negative.
+
+## Modeling Process
 
 For the modeling process, I chose multiple models, testing them with different vectorizer and in different stages of data cleaning. For the baseline models, I ran Logistic Regression, Random Forest, Naive Bayes, and Support Vector Machine.
 
@@ -189,3 +197,4 @@ If you have any questions or suggestions, please reach me out on:
 
 ## References
 Campos, D., Rocha Silva, R., and Bernadino, J., 2019. Text Mining in Hotel Reviews: Impact of Words Restriction in Text Classification. University of Coimbra, Coimbra, Portugal.
+
