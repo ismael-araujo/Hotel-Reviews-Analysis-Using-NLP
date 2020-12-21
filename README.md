@@ -9,7 +9,7 @@
 ##### This project is expected to be concluded on January 6, 2021.
 
 ## Overview
-In this project, we will create a model that can predict if a hotel review is negative or positive. We will walk through multiple Natural Language Processing to understand how we can use machines to read reviews and get insights out of it. Baseline moldes included Logistic Regression, Random Forest, Naive Baiyes, and Support Vector Machine (SVM). The final model was a GridSearch SVM with an accuracy of 0.8268 and F1-Score 0.8247. This project walks through exploratory data analaysis, data cleaning, sentiment analysis, data preprossessing, vanilla model, and ensemble models. You can find a summary of project in the final notebook.
+In this project, we will create a model that can predict if a hotel review is negative or positive. We will walk through multiple Natural Language Processing to understand how we can use machines to read reviews and get insights out of it. Baseline moldes included Logistic Regression, Random Forest, Naive Baiyes, and Support Vector Machine (SVM). The final model was a GridSearch SVM with an accuracy of 0.8268 and F1-Score 0.8247. This project walks through exploratory data analaysis, data cleaning, sentiment analysis, data preprossessing, vanilla model and ensemble models iterations. You can find a summary of project in the final notebook.
 
 ## Business Problem
 
