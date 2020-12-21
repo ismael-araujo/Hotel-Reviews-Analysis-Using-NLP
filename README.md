@@ -9,6 +9,10 @@
 ##### This project is expected to be concluded on January 6, 2021.
 
 ## Overview
+In this project, we will create a model that can predict if a hotel review is negative or positive. We will walk through multiple Natural Language Processing to understand how we can use machines to read reviews and get insights out of it. Baseline moldes included Logistic Regression, Random Forest, Naive Baiyes, and Support Vector Machine (SVM). The final model was a GridSearch SVM with an accuracy of 0.8268 and F1-Score 0.8247. The model performs well, but it needs to improvement when predicting negative reviews.
+
+## Business Problem
+
 One of the biggest problems that many companies have been trying to find a solution to is taking advantage of all the data collected. The amount of data has challenged the travel industry. One type of data is reviews left by guests on websites such as Booking.com, TripAdvisor, and Yelp.
 
 Hotels have been trying to find ways to analyze the reviews and get insights out of them. However, some hotels can receive thousands of guests every week and hundreds of reviews. It becomes nearly impossible and expensive for hotels to keep track of the reviews. Thus, multiple hotels might negligently ignore these valuable data due to the cost and energy that need to be allocated. That's what this project will solve.
