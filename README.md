@@ -16,24 +16,31 @@ One of the biggest problems that many companies have been battleling is how to t
 
 Hotels have been trying to find ways to analyze the reviews and get insights out of it. However, some hotels can receive thousands of guests every week and hundreds of reviews. It becomes nearly impossible and expensive for hotels to keep track of the reviews. Thus, multiple hotels might negligete these valuable data due to the cost and energy that need to be allocated. That's exactly what this project will solve.
 
-For these reasons, here are a few questions that I will try to answer with this project:
+### Setting the hypothetical scenario
 
-1. Can machine learning be used to correctly identify positive or negative reviews?
-2. Can NLP be used to create a useful word cloud with the the positive and negative reviews?
-3. How is a specific hotel compared to the other hotels in the same city? Can we find more information about the guests based on their review?
+I work for a consulting company that uses machine learning to give insights to hotels using their reviews. I'm working on the first company's project and we have our first client. First, we need to answer a few questions before working on a client's project:
 
-As a stretch goal, once we have a model that can predict with some accuracy when reviews are positive or negative, we will be able to use the model in any website that contains hotel reviews and social media.
+- Can we create a model that can correctly identify the most important features when predicting if a model is positive or negative for all the reviews we have available? What are these features? How are they compared to specific hotels?
+- Can we create a word cloud that can correclty give insights to hotels?
 
-#### Why is this important?
+#### The client
+
+Our first client is a hotel in London called Britannia International Hotel Canary Wharf. They have thousands of reviews and a 6.7 overall score on Booking.com. They think this is a low score compared to other hotels in London and they want to understand what is making they have this low score. Due to COVID-19 they don't have resources to read all the reviews and make sense of them. Thus, they want to find a way to get quick insights without having to read every review. They have two main questions:
+
+- How does the client score performs compared to other hotels in the city?
+- What are the most mentioned words in the negative and positive reviews? What insights could they get from them?
+
+#### Why Britannia International Hotel Canary Wharf?
+While doing the Exploratory Data Analysis, I noticed that Britannia International Hotel Canary Wharf was the hotel with the highest number of reviews and the average is score is 6.7, which means that I 
+
+#### Why is the word cloud important?
 While choosing the appropriate dataset, I noticed that the reviews score were not matching to the guest sentiment about the hotel. The mismatching becomes clear in the scores between 6 and 7. Please see an example below. Keep in mind that the punctuations were removed in the data cleaning and mispellings are common in the reviews.
 
 |Hotel   |Negative Review   |Posittive Review   |Score   |
 | ------------ | ------------ | ------------ | ------------ |
 |Hotel Arena   | Even though the pictures show very clean rooms the actual room was quit dirty and outlived Also check in is at 15 o clock but our room was not ready at that time   |No Positive   |6.5   |
 
-As we can see above, the review doesn't match the overall score. If there is nothing positive about the hotel, how can they still get a 6.5 score? This is misleading to the hotel who are looking for areas to improve and to the users who are looking for a trustworthy score. 
-
-*** THIS SECTION IS UNDER IMPROVEMENTS - RECOMMENDATION SYSTEM PART***
+As we can see above, the review doesn't match the overall score. If there is nothing positive about the hotel, how can they still get a 6.5 score? This is misleading to the hotel who are looking for areas to improve and to the users who are looking for a trustworthy score.
 
 ## Data and Methods
 The dataset for this project was originally used in the study Text Mining in Hotel Reviews: Impact of Words Restriction in Text Classification by Diego Campos, Rodrigo Rocha Silva, and Jorge Bernadino and a team at University of Coimbra. You can find the paper [here](https://www.researchgate.net/publication/336224346_Text_Mining_in_Hotel_Reviews_Impact_of_Words_Restriction_in_Text_Classification "here"). The raw dataset is from [Kaggle](https://www.kaggle.com/jiashenliu/515k-hotel-reviews-data-in-europe/data "Kaggle"). Since some datasets were large, you can download the cvs files [here](https://drive.google.com/drive/folders/1mjoGF17DR8bcqLhHQ78IqXgY81rSonVM?usp=sharing "here"). The original dataset had 515,738 observations and 17 columns. It's important to mention that this dataset was collected from Booking.com, a website where you can book hotels. It's a great dataset because it contains real reviews that we can use to train our model so that our model will be able to read real-life reviews and predict if they are good or bad.
@@ -207,5 +214,6 @@ If you have any questions or suggestions, please reach me out on:
 
 ## References
 Campos, D., Rocha Silva, R., and Bernadino, J., 2019. Text Mining in Hotel Reviews: Impact of Words Restriction in Text Classification. University of Coimbra, Coimbra, Portugal.
+
 
 
