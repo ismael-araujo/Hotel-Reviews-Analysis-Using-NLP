@@ -31,7 +31,7 @@ Our first client is a hotel in London called Britannia International Hotel Canar
 - What are the most mentioned words in the negative and positive reviews? What insights could they get from them?
 
 #### Why Britannia International Hotel Canary Wharf?
-While doing the Exploratory Data Analysis, I noticed that Britannia International Hotel Canary Wharf was the hotel with the highest number of reviews and the average is score is 6.7, which means that I 
+While doing the Exploratory Data Analysis, I noticed that Britannia International Hotel Canary Wharf was the hotel with the highest number of reviews and the average is score is 6.7, which means that there is probably room for improvement and it is more likely to find different wordclouds for negative and positive reviews.
 
 
 ## Data and Methods
@@ -217,3 +217,6 @@ If you have any questions or suggestions, please reach me out on:
 
 ## References
 Campos, D., Rocha Silva, R., and Bernadino, J., 2019. Text Mining in Hotel Reviews: Impact of Words Restriction in Text Classification. University of Coimbra, Coimbra, Portugal.
+
+
+
