@@ -20,7 +20,7 @@ Hotels have been trying to find ways to analyze the reviews and get insights out
 
 I work for a consulting company that uses machine learning to give insights to hotels using their reviews. I'm working on the first company's project and we have our first client. First, we need to answer a few questions before working on a client's project:
 
-- Can we create a model that can correctly identify the most important features when predicting if a model is positive or negative for all the reviews we have available? What are these features? How are they compared to specific hotels?
+- Can we create a model that can correctly identify the most important features when predicting if a model is positive or negative for all the reviews we have available? What are these features? Are they different for individual hotels compared to 
 - Can we create a word cloud that can correclty give insights to hotels?
 
 #### The client
