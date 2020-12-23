@@ -9,23 +9,26 @@
 ##### This project is expected to be concluded on January 6, 2021.
 
 ## Overview
-In this project, we will create a model that can predict if a hotel review is negative or positive so that hotels can use it to classify their reviews correctly. We will walk through multiple Natural Language Processing to understand how we can use machines to read reviews and get insights out of it. Baseline moldes included Logistic Regression, Random Forest, Naive Baiyes, and Support Vector Machine (SVM). The final model was a GridSearch SVM with an accuracy of 0.8268 and F1-Score 0.8247. This project walks through exploratory data analaysis, data cleaning, sentiment analysis, data preprossessing, vanilla model and ensemble models iterations. You can find a summary of project in the final notebook.
+In this project, we will create a model that can predict if a hotel review is negative or positive so that hotels can use it to classify their reviews correctly. We will walk through multiple Natural Language Processing to understand how we can use machines to read reviews and get insights out of it. Baseline models included are Logistic Regression, Random Forest, Naive Bayes, and Support Vector Machine (SVM). The final model was a GridSearch SVM with an accuracy of 0.8268 and F1-Score 0.8247. 
+
+This project walks through exploratory data analysis, data cleaning, sentiment analysis, data preprossessing, vanilla model, and ensemble model iterations. You can find a summary of the project in the final notebook.
 
 ## Business Problem
-One of the biggest problems that many companies have been battleling is how to take advantage of all the data that is collected by them. The travel industry has been challenged by the amount of data. One of the types of data is reviews left by guests in websites such as Booking.com, TripAdvisor, and Yelp.
+One of the biggest problems that many companies have been trying to fix is how to take advantage of all the data collected. The amount of data has challenged the travel industry. One type of data is reviews left by guests on websites such as Booking.com, TripAdvisor, and Yelp.
 
-Hotels have been trying to find ways to analyze the reviews and get insights out of it. However, some hotels can receive thousands of guests every week and hundreds of reviews. It becomes nearly impossible and expensive for hotels to keep track of the reviews. Thus, multiple hotels might negligete these valuable data due to the cost and energy that need to be allocated. That's exactly what this project will solve.
+Hotels have been trying to find ways to analyze the reviews and get insights out of them. However, some hotels can receive thousands of guests every week and hundreds of reviews. It becomes nearly impossible and expensive for hotels to keep track of the reviews. Thus, multiple hotels might ignore these valuable data due to the cost and energy that need to be allocated. That's
 
 ### Setting the hypothetical scenario
 
-I work for a consulting company that uses machine learning to give insights to hotels using their reviews. Our actual client is a hotel in London called Britannia International Hotel Canary Wharf. They have thousands of reviews and a 6.7 overall score on Booking.com. They think this is a low score compared to other hotels in London and they want to understand what is making they have this low score. Due to COVID-19 they don't have resources to read all the reviews and make sense of them. Thus, they want to find a way to get quick insights without having to read every review. They have two main questions:
+give insights to hotels using their reviews. Our actual client is a hotel in London called Britannia International Hotel Canary Wharf. They have thousands of reviews and a 6.7 overall score on Booking.com. They think this is a low score compared to other hotels in London, and they want to understand what is making them have this low score. Due to COVID-19, they don't have the resources to read all the reviews and make sense of them. Thus, they want to find a way to get quick insights without having to read every review. They have two main questions:
 
 - Can we create a model that can correctly identify the most important features when predicting if a model is positive or negative for all the reviews we have available? What are these features?
-- What are the most mentioned words in the negative and positive reviews? What insights could they get from them? How would a word cloud for negative and positive reviews look like?
+- What are the most mentioned words in negative and positive reviews? What insights could they get from them? How would a word cloud for negative and positive reviews look like?
 - How does the client score performs compared to other hotels in the city?
 
 #### Why Britannia International Hotel Canary Wharf?
-While doing the Exploratory Data Analysis, I noticed that Britannia International Hotel Canary Wharf was the hotel with the highest number of reviews and the average is score is 6.7, which means that there is probably room for improvement and it is more likely to find different wordclouds for negative and positive reviews.
+
+While doing the Exploratory Data Analysis, I noticed that Britannia International Hotel Canary Wharf was the hotel with the highest number of reviews. The average score is 6.7, which means that there is probably room for improvement. It is more likely to find different word clouds for negative and positive reviews.
 
 
 ## Data and Methods
