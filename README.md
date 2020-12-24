@@ -18,7 +18,7 @@ One of the biggest problems that many companies have been trying to overcome is 
 
 Hotels have been trying to find ways to analyze the reviews and get insights out of them. However, some hotels can receive thousands of guests every week and hundreds of reviews. It becomes nearly impossible and expensive for hotels to keep track of the reviews. Thus, multiple hotels might ignore these valuable data due to the cost and energy that need to be allocated. The other problem is that hotels such as Booking.com doesn't allow users to choose their score. The score is determined by questions asked to the user, and then the review is calculated. This is problematic because guests could have had a bad experience and the hotel would still get a 7 or 8 score, which gives a false illusion that the guest didn't have any problems.
 
-This project will build a model that can correctly predict if a hotel review is negative or positive so that hotels can input their reviews and get a non-biased score.
+This project will build a model that can correctly predict if a hotel review is negative or positive so that hotels can input their reviews and get a non-biased score from any website, which will turn the review analysis uniform. Although the model will be trained with reviews from over 1,400 hotels, it can be used for any hotel to correctly predict if a review is positive or negative.
 
 ### Setting the hypothetical scenario
 
@@ -171,40 +171,36 @@ The Vanilla Models performed fairly well since the beggining with an accuracy of
 |Vanilla SVC CV	|0.783904|0.794234	|0.786862	|0.790531|
 |Vanilla Naive Bayes CV|0.781129	|0.793541	|0.780793	|0.787115|
 
+## Final Model
 
+I chose the Random Forest as the final model. Although it didn't have the best accuracy, the feature importance are more interpretable. The accuracy of this model was 0.8012, which means that the model can correctly classify the target variable 80.12% of the time. Looking at cross-validation, we can see that the model performed similarly in the train set. I used 5 folds and the range difference between the highest accuracy and lowest accuracy was , which is a very small difference.
 
-
-## Results
-
-
-
-The best model was a GridSearch SVC. We can see the metrics below:
-
-|Best Model  |Accuracy  |Precision   |Recall   |F1-Score   |
+|   |Accuracy   |Precision   |Recall   |F1 Score   |
 | ------------ | ------------ | ------------ | ------------ | ------------ |
-|GridSearch SVC   |0.826827   |0.867271   |0.786148   |0.824719   |
+|Random Forest|0.801295 |0.8374364|0.7650838|0.7996268|
 
-Although I was looking for a high accuracy, the F1-Score is also very important, because I want to correctly classify reviews that need special attention. In this case, the negative reviews.
+Looking at the confusion matrix, we can see that the overall performance is ok. However, it tends to predict more False Positives than False Negatives. There is definitely room for improvement as next steps.
 
-![](https://github.com/Ismaeltrevi/hotel-reviews-analysis-using-nlp/blob/main/images/confusion-matrix-ensemble-model.png?raw=true)
+![](https://github.com/Ismaeltrevi/hotel-reviews-analysis-using-nlp/blob/main/images/confusion-matrix-final-model.png?raw=true)
 
-As we can see,  the GridSearch SVC was able to predict correctly 85.13% of the positive reviews and 72.79%. It definitely have room for improvement, but it's a good result for this stage of the project.
+The top 20 words (feature importance) for the model are negative, positive, great, excellent, staff, location, room, friendly, comfortable, poor, breakfast, dirty, good, helpful, small, lovely, nice, old, bad, and perfect. All these words make sense when we are talking about hotels. In fact, they are very similar to the words found in the word cloud.
+
 
 ## Final Recommendations
-- Use machine learning models to quickly identify negative and positive reviews without having to read all of them.
-- Use word clouds to get quick insights from negative and positive reviews. The negative reviews can be used to improve the business and positive reviews can be used for advertisement, for example.
+
+All models were trained with the reviews of over 1,400 hotels. Thus, the model can be used for any hotel because it used over 515k reviews. Britannia International Hotel Canary Wharf can use our model to correctly classify reviews at any point. However, the most important takeaways here is the feature importance. Since guests tend to expect for the same things in every hotel, we learned that words such as staff, location, comfortable, and dirty will make have a higher value in their reviews. The words also match to the word cloud create for Britannia International Hotel Canary Wharf, which proves that the hotel, similarly to other, need to focus on those words.
+
+I recommend the hotel start using word clouds to get quick insights from negative and positive reviews. The negative reviews can be used to improve the business and should be used as soon as possible if the hotel wants to increase their overall score. The hotel should also use positive reviews can be used for advertisement, for example.
 
 ## Conclusion
 
-- Machine learning can be used to correctly identify positive and negative reviews. However, identify with 100% confidence would be extremely difficult.
+- Machine learning can be used to correctly identify positive and negative reviews. However, identify with 100% confidence is difficult. My final model can be used for any hotel to find feature importance
 - Word clouds can be used to understand what words appear the most in negative and positive reviews. The management can quickly take a look and get insights out of it.
 - The Britannia International Hotel Canary Wharf performes poorly in the reviews compared to other hotels in London. There is a lot of room for improvement.
 
 ## Next Steps:
 
-- Test the model in the whole data set
-- Use the features of the model with the highest coefficient to understand which words can predict better if a review is good or not and test
-- Use the features with the highest coefficient to predict if posts in social media are positive or negative
+- Test the model in the whole data set as well as social media posts.
 - Create a recommendation system to the user based on reviews
 - Create a dashboard for guests and hotels easily get information about hotels.
 
@@ -239,5 +235,6 @@ If you have any questions or suggestions, please reach me out on:
 
 ## References
 Campos, D., Rocha Silva, R., and Bernadino, J., 2019. Text Mining in Hotel Reviews: Impact of Words Restriction in Text Classification. University of Coimbra, Coimbra, Portugal.
+
 
 
