@@ -149,11 +149,34 @@ The graph above shows that the sentiment analysis does a good job identifying po
 
 ## Modeling Process
 
-For the modeling process, I chose multiple models, testing them with different vectorizer and in different stages of data cleaning. For the baseline models, I ran Logistic Regression, Random Forest, Naive Bayes, and Support Vector Machine.
+### Vanilla Models
 
-I tried the vanilla models with the datasets vectorized with CountVectorizer, TF-IDF. I also tried these models with and without lemmatization. I did not include other features such as the name of the hotel or location because the main objective is to train a model using the reviews only.
+For the modeling process, I chose multiple models, testing them with different vectorizers in different stages of data cleaning. For the baseline models, I ran Logistic Regression, Random Forest, Naive Bayes, and Support Vector Machine.
+
+I ran the models with the CountVectorizer and TF-IDF vectorizers to compared which one would have the best performance. I also tried these models with and without lemmatization. I did not include other features such as the name of the hotel or location because the main objective is to train a model using the reviews only.
+
+The Vanilla Models performed fairly well since the beggining with an accuracy of 0.7981. The time I spent cleaning the text reviews paid off. The best performing model was a SVM model with the accuracy score of 0.8233 and F1 Score of 0.8205 using the RBF kernel. However, SVM models using RBF kernel don't allow feature importance retrieve. I tried running a SVM model using linear kernel, but the performance was poor compared to the RBF. Thus, I Random Forest with lemmatized words was the winner between the vanilla models. You can see all the models I ran in the [vanilla models notebook](https://github.com/Ismaeltrevi/hotel-reviews-analysis-using-nlp/blob/main/models/baseline-models.ipynb "vanilla models notebook") below.
+
+|Model   |Accuracy   |Precision   |Recall   |F1 Score   |
+| ------------ | ------------ | ------------ | ------------ | ------------ |
+|Vanilla SVC SMOTE|0.823312	|0.865979	|0.779722	|0.820590|
+|Vanilla Random Forest Lem|0.823127	|0.849331	|0.790264	|0.818733|
+|Vanilla SVC TF-IDF|0.822202	|0.862205	|0.781864	|0.820071|
+|Vanilla Log Reg Lem|0.817761	|0.831499	|0.801977	|0.816471|
+|Vanila Log Reg TF-IDF|0.817021	|0.848194	|0.787933	|0.816954|
+|Vanilla Random Forest CV|0.805365	|0.843615	|0.766512	|0.803217|
+|Vanilla Random Forest TF-IDF|0.803885	|0.840971	|0.766512	|0.802017|
+|Vanilla Random Forest SMOTE|0.800925	|0.831200	|0.760615	|0.794343|
+|Vanilla Logisitic Regression CV|0.798150	|0.810458	|0.796858	|0.803600|
+|Vanilla SVC CV	|0.783904|0.794234	|0.786862	|0.790531|
+|Vanilla Naive Bayes CV|0.781129	|0.793541	|0.780793	|0.787115|
+
+
+
 
 ## Results
+
+
 
 The best model was a GridSearch SVC. We can see the metrics below:
 
