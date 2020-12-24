@@ -49,3 +49,30 @@ def evaluation_dict(accuracy, precision, recall, f1, y_test, y_pred, model_name)
                                                     'Precision': precision,
                                                     'Recall': recall,
                                                     'F1 Score': f1 }
+
+
+# This function lowercase all the review words, removes punctuation and numbers
+def clean_text_round1(text):
+    '''Make text lowercase, remove text in square brackets, remove punctuation and remove words containing numbers.'''
+    text = text.lower()
+    text = re.sub('[%s]' % re.escape(string.punctuation), '', text)
+    text = re.sub('\w*\d\w*', '', text)
+
+    return text
+
+round1 = lambda x: clean_text_round1(x)
+
+
+# Create a function to get subjectivity
+def getSubjectivity(text):
+	'''
+	This function tests the subjetivity of the reviews
+	'''
+    return TextBlob(text).sentiment.subjectivity
+
+# Create a function to get polarity with tweets
+def getPolarity(text):
+	'''
+	This functions checks the polarity of the reviews
+	''
+    return TextBlob(text).sentiment.polarity
