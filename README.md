@@ -22,12 +22,10 @@ This project will build a model that can correctly predict if a hotel review is 
 
 ### Setting the hypothetical scenario
 
-Our client is a hotel in London called Britannia International Hotel Canary Wharf. They have thousands of reviews and a 6.7 overall score on Booking.com. They think this is a low score compared to other London hotels, and they want to understand what is causing this low score. Due to COVID-19, they don't have the resources to read all the reviews and make sense of them. Thus, they want to find a way to get quick insights without having to read every review. They want to improve their hotel by looking at the most common words in the negative and positive reviews. They also want to know which words have the highest weight for all hotels in Europe in general, so they can understand not only their guests, but all guests in general.
+Our actual client is a hotel in London called Britannia International Hotel Canary Wharf. They have thousands of reviews and a 6.7 overall score on Booking.com. They think this is a low score compared to other London hotels, and they want to understand what is causing this low score. Due to COVID-19, they don't have the resources to read all the reviews and make sense of them. Thus, they want to find a way to get quick insights without having to read every review. They have a few business questions:
 
-Business questions:
-
-- Can we create a model that can correctly identify the most important features when predicting if a review is positive or negative for all hotels in general? What are these features?
-- What are the most mentioned words in negative and positive reviews? What insights could they get from them? How would a word cloud for negative and positive reviews?
+- Can we create a model that can correctly identify the most important features when predicting if a review is positive or negative for all the reviews we have available? What are these features?
+- What are the most mentioned words in negative and positive reviews? What insights could they get from them? How would a word cloud for negative and positive reviews look like for their hotel and in comparison to other hotels?
 - How does the client score performs compared to other hotels in the city?
 
 #### Why Britannia International Hotel Canary Wharf?
@@ -157,7 +155,7 @@ For the modeling process, I chose multiple models, testing them with different v
 
 I ran the models with the CountVectorizer and TF-IDF vectorizers to compare which one would have the best performance. I also tried these models with and without lemmatization. I did not include other features such as the name of the hotel or location because the main objective is to train a model using the reviews only.
 
-The Vanilla Models performed fairly well since the beginning with an accuracy of 0.7981. The time I spent cleaning the text reviews paid off. The best performing model was an SVM model with an accuracy score of 0.8233 and F1 Score of 0.8205 using the RBF kernel. However, SVM models using RBF kernel don't allow feature importance retrieval. I tried running an SVM model using a linear kernel, but the performance was poor compared to the RBF. Thus, I Random Forest with lemmatized words was the winner between the vanilla models. You can see all the models I ran in the [vanilla models notebook](https://github.com/Ismaeltrevi/hotel-reviews-analysis-using-nlp/blob/main/models/baseline-models.ipynb "vanilla models notebook") below.
+The Vanilla Models performed fairly well since the beginning with an accuracy of 0.7981. The time I spent cleaning the text reviews paid off. The best performing model was an SVM model with an accuracy score of 0.8233 and F1 Score of 0.8205 using the RBF kernel. However, SVM models using RBF kernel don't allow feature importance retrieval. I tried running an SVM model using a linear kernel, but the performance was poor compared to the RBF. Thus, I Random Forest with lemmatized words was the winner between the vanilla models. You can see all the models I ran in the [vanilla models notebook](https://github.com/Ismaeltrevi/hotel-reviews-analysis-using-nlp/blob/main/models/score-density-hotel-vs-london.png.ipynb "vanilla models notebook") below.
 
 |Model   |Accuracy   |Precision   |Recall   |F1 Score   |
 | ------------ | ------------ | ------------ | ------------ | ------------ |
@@ -205,7 +203,6 @@ I recommend the hotel start using word clouds to get quick insights from negativ
 - Test the model in the whole data set as well as social media posts.
 - Create a recommendation system to the user based on reviews
 - Create a dashboard for guests and hotels to easily get information about hotels.
-- Compare the word clouds of every hotel in Europe to Britannia International Hotel Canary Wharf.
 
 ## Repository Content
 
@@ -226,7 +223,6 @@ I recommend the hotel start using word clouds to get quick insights from negativ
 │   ├── sentiment-analysis.ipynb  # contains sentiment analysis notebook
 ├── README.md                          # public-facing preview
 ├── final_notebook.ipynb               # final version of data cleaning, EDA, feature engineering, and modeling process
-├── functions.py              # functions used in the final notebook
 └── presentation.pdf    # deck
 ```
 ## For More Information or Suggestions
