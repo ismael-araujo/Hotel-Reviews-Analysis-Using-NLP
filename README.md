@@ -11,18 +11,18 @@
 ## Overview
 In this project, I will create a model that can predict if a hotel review is negative or positive so that hotels can use it to classify their reviews correctly. I will analyze a specific hotel in London and compare it to other hotels in London as well. We will walk through multiple Natural Language Processing to understand how we can use machines to read reviews and get insights out of it. Baseline models include Logistic Regression, Random Forest, Naive Bayes, and Support Vector Machine (SVM). Ensemble models include Voting, Bagging, GridSearch, AdaBoost, and Gradient Boosting. The final model was a GridSearch SVM with an accuracy of 0.8268 and F1-Score 0.8247.
 
-This project walks through exploratory data analysis, data cleaning, sentiment analysis, data preprossessing, vanilla model, and ensemble model iterations. You can find a summary of the project in the final notebook.
+This project walks through exploratory data analysis, data cleaning, sentiment analysis, data preprocessing, vanilla model, an ensemble model iterations. You can find a summary of the project in the final notebook.
 
 ## Business Problem
 One of the biggest problems that many companies have been trying to overcome is how to take advantage of all the data collected from guests. The amount of data has challenged the travel industry. One type of data is reviews left by guests on websites such as Booking.com, TripAdvisor, and Yelp.
 
-Hotels have been trying to find ways to analyze the reviews and get insights out of them. However, some hotels can receive thousands of guests every week and hundreds of reviews. It becomes nearly impossible and expensive for hotels to keep track of the reviews. Thus, multiple hotels might ignore these valuable data due to the cost and energy that need to be allocated. The other problem is that hotels such as Booking.com doesn't allow users to choose their score. The score is determined by questions asked to the user, and then the review is calculated. This is problematic because guests could have had a bad experience and the hotel would still get a 7 or 8 score, which gives a false illusion that the guest didn't have any problems.
+Hotels have been trying to find ways to analyze the reviews and get insights out of them. However, some hotels can receive thousands of guests every week and hundreds of reviews. It becomes nearly impossible and expensive for hotels to keep track of the reviews. Thus, multiple hotels might ignore these valuable data due to the cost and energy that need to be allocated. The other problem is that hotels such as Booking.com don't allow users to choose their score. The score is determined by questions asked to the user, and then the review is calculated. This is problematic because guests could have had a bad experience, and the hotel would still get a 7 or 8 score, which gives a false illusion that the guest didn't have any problems.
 
-This project will build a model that can correctly predict if a hotel review is negative or positive so that hotels can input their reviews and get a non-biased score from any website, which will turn the review analysis uniform. Although the model will be trained with reviews from over 1,400 hotels, it can be used for any hotel to correctly predict if a review is positive or negative.
+This project will build a model that can correctly predict if a hotel review is negative or positive so that hotels can input their reviews and get a non-biased score from any website, which will turn the review analysis uniform. Although the model will be trained with reviews from over 1,400 hotels, it can be used for any hotel to predict if a review is positive or negative correctly.
 
 ### Setting the hypothetical scenario
 
-Our actual client is a hotel in London called Britannia International Hotel Canary Wharf. They have thousands of reviews and a 6.7 overall score on Booking.com. They think this is a low score compared to other hotels in London, and they want to understand what is causing this low score. Due to COVID-19, they don't have the resources to read all the reviews and make sense of them. Thus, they want to find a way to get quick insights without having to read every review. They have a few business questions:
+Our actual client is a hotel in London called Britannia International Hotel Canary Wharf. They have thousands of reviews and a 6.7 overall score on Booking.com. They think this is a low score compared to other London hotels, and they want to understand what is causing this low score. Due to COVID-19, they don't have the resources to read all the reviews and make sense of them. Thus, they want to find a way to get quick insights without having to read every review. They have a few business questions:
 
 - Can we create a model that can correctly identify the most important features when predicting if a review is positive or negative for all the reviews we have available? What are these features?
 - What are the most mentioned words in negative and positive reviews? What insights could they get from them? How would a word cloud for negative and positive reviews look like for their hotel and in comparison to other hotels?
@@ -73,7 +73,7 @@ The data set was quite organized. However, it had a few challenges. For example,
 Another big challenge with the dataset is that the address is a long string, which means that it is difficult to collect information such as city and country due to the different formats which are written. This problem was solved by grabbing the city and country of the hotel using Geopy.
 
 ## Data Cleaning
-As in any NLP project, the data cleaning is the most important step. We need to make sense of the information we have and create features for the models only with the information that matters. A few cleaning steps that I took were: 
+As in any NLP project, data cleaning is the most important step. We need to make sense of the information we have and create features for the models only with the information that matters. A few cleaning steps that I took were: 
 - Remove any punctuation, stop words, and numbers
 - Fix the spelling using TextBlob
 - Lemmatization
@@ -88,14 +88,14 @@ Since I had a classification problem, I first created a target feature with the 
 
 ![Class Distribution - Before](https://github.com/Ismaeltrevi/hotel-reviews-analysis-using-nlp/blob/main/images/class_distribution-before.png?raw=true "Class Distribution - Before")
 
-We can see that there is a big class imbalance. Since our dataset is large, we can fix this using the pandas sample function. Thus, I will only use 12% of the positive reviews, which will get closer to the number of negative reviews, so it will get closer to the number of negative reviews.
+We can see that there is a significant class imbalance. Since our dataset is large, we can fix this using the pandas sample function. Thus, I will only use 12% of the positive reviews, which will get closer to the number of negative reviews, so it will get closer to the number of negative reviews.
 
 ![Class Distribution - After](https://github.com/Ismaeltrevi/hotel-reviews-analysis-using-nlp/blob/main/images/class_distribution-after.png?raw=true "Class Distribution - After")
 
 We can see above that the class distribution problem was solved.
 
 ### Exploratory Data Analysis
-I wanted a few answers from the dataset and check if I could find any patterns. Thus, I had questions, which I will answer right next:
+I wanted a few answers from the dataset and checked if I could find any patterns. Thus, I had questions which I will answer right next:
 
 **What nationalities give the highest number of reviews?**
 
@@ -120,9 +120,9 @@ While choosing the appropriate dataset, I noticed that the reviews score were no
 
 |Hotel   |Negative Review   |Posittive Review   |Score   |
 | ------------ | ------------ | ------------ | ------------ |
-|Hotel Arena   | Even though the pictures show very clean rooms the actual room was quite dirty and outlived Also check-in is at 15 o clock but our room was not ready at that time   |No Positive   |6.5   |
+|Hotel Arena   | Even though the pictures show very clean rooms the actual room was quite dirty and outlived also check-in is at 15 o clock but our room was not ready at that time   |No Positive   |6.5   |
 
-As we can see above, the review doesn't match the overall score. If there is nothing positive about the hotel, how can they still get a 6.5 score? This is misleading to the hotel who are looking for areas to improve and to the users who are looking for a trustworthy score.
+As we can see above, the review doesn't match the overall score. If there is nothing positive about the hotel, how can they still get a 6.5 score? This is misleading to the hotel looking for areas to improve and to the users looking for a trustworthy score.
 
 For the results section, I had two question in mind:
 
@@ -141,11 +141,11 @@ On the other hand, looking at the negative reviews word cloud, we can see many w
 
 ## Sentiment Analysis
 
-In this step we will create a sentiment analysis and compare the performance the actual score that users give. I want to visualize if the sentiment analysis can do a better job analysing when a review is negative or positive.
+In this step, we will create a sentiment analysis and compare the performance the actual score that users give. I want to visualize if the sentiment analysis can do a better job analyzing when a review is negative or positive.
 
 ![](https://github.com/Ismaeltrevi/hotel-reviews-analysis-using-nlp/blob/main/images/sentiment_analysis.png?raw=true)
 
-The graph above shows that the sentiment analysis does a good job identifying positive reviews with a positive polarity. However, it does not perform as well with the negative reviews. We can see that there is a big number of neutral reviews where sentiment analysis couldn't understand if the review was positive or negative.
+The graph above shows that sentiment analysis does a good job identifying positive reviews with a positive polarity. However, it does not perform as well with the negative reviews. We can see that there is a big number of neutral reviews where sentiment analysis couldn't understand if the review was positive or negative.
 
 ## Modeling Process
 
@@ -153,9 +153,9 @@ The graph above shows that the sentiment analysis does a good job identifying po
 
 For the modeling process, I chose multiple models, testing them with different vectorizers in different stages of data cleaning. For the baseline models, I ran Logistic Regression, Random Forest, Naive Bayes, and Support Vector Machine.
 
-I ran the models with the CountVectorizer and TF-IDF vectorizers to compared which one would have the best performance. I also tried these models with and without lemmatization. I did not include other features such as the name of the hotel or location because the main objective is to train a model using the reviews only.
+I ran the models with the CountVectorizer and TF-IDF vectorizers to compare which one would have the best performance. I also tried these models with and without lemmatization. I did not include other features such as the name of the hotel or location because the main objective is to train a model using the reviews only.
 
-The Vanilla Models performed fairly well since the beggining with an accuracy of 0.7981. The time I spent cleaning the text reviews paid off. The best performing model was a SVM model with the accuracy score of 0.8233 and F1 Score of 0.8205 using the RBF kernel. However, SVM models using RBF kernel don't allow feature importance retrieve. I tried running a SVM model using linear kernel, but the performance was poor compared to the RBF. Thus, I Random Forest with lemmatized words was the winner between the vanilla models. You can see all the models I ran in the [vanilla models notebook](https://github.com/Ismaeltrevi/hotel-reviews-analysis-using-nlp/blob/main/models/baseline-models.ipynb "vanilla models notebook") below.
+The Vanilla Models performed fairly well since the beginning with an accuracy of 0.7981. The time I spent cleaning the text reviews paid off. The best performing model was an SVM model with an accuracy score of 0.8233 and F1 Score of 0.8205 using the RBF kernel. However, SVM models using RBF kernel don't allow feature importance retrieval. I tried running an SVM model using a linear kernel, but the performance was poor compared to the RBF. Thus, I Random Forest with lemmatized words was the winner between the vanilla models. You can see all the models I ran in the [vanilla models notebook](https://github.com/Ismaeltrevi/hotel-reviews-analysis-using-nlp/blob/main/models/baseline-models.ipynb "vanilla models notebook") below.
 
 |Model   |Accuracy   |Precision   |Recall   |F1 Score   |
 | ------------ | ------------ | ------------ | ------------ | ------------ |
@@ -173,13 +173,13 @@ The Vanilla Models performed fairly well since the beggining with an accuracy of
 
 ## Final Model
 
-I chose the Random Forest as the final model. Although it didn't have the best accuracy, the feature importance are more interpretable. The accuracy of this model was 0.8012, which means that the model can correctly classify the target variable 80.12% of the time. Looking at cross-validation, we can see that the model performed similarly in the train set. I used 5 folds and the range difference between the highest accuracy and lowest accuracy was , which is a very small difference.
+I chose Random Forest as the final model. Although it didn't have the best accuracy, the feature importance are more interpretable. This model's accuracy was 0.8012, which means that the model can correctly classify the target variable 80.12% of the time. Looking at cross-validation, we can see that the model performed similarly in the train set. I used 5 folds, and the range difference between the highest accuracy and lowest accuracy was, which is a very small difference.
 
 |   |Accuracy   |Precision   |Recall   |F1 Score   |
 | ------------ | ------------ | ------------ | ------------ | ------------ |
 |Random Forest|0.801295 |0.8374364|0.7650838|0.7996268|
 
-Looking at the confusion matrix, we can see that the overall performance is ok. However, it tends to predict more False Positives than False Negatives. There is definitely room for improvement as next steps.
+Looking at the confusion matrix, we can see that the overall performance is ok. However, it tends to predict more False Positives than False Negatives. There is definitely room for improvement in next steps.
 
 ![](https://github.com/Ismaeltrevi/hotel-reviews-analysis-using-nlp/blob/main/images/confusion-matrix-final-model.png?raw=true)
 
@@ -188,21 +188,21 @@ The top 20 words (feature importance) for the model are negative, positive, grea
 
 ## Final Recommendations
 
-All models were trained with the reviews of over 1,400 hotels. Thus, the model can be used for any hotel because it used over 515k reviews. Britannia International Hotel Canary Wharf can use our model to correctly classify reviews at any point. However, the most important takeaways here is the feature importance. Since guests tend to expect for the same things in every hotel, we learned that words such as staff, location, comfortable, and dirty will make have a higher value in their reviews. The words also match to the word cloud create for Britannia International Hotel Canary Wharf, which proves that the hotel, similarly to other, need to focus on those words.
+All models were trained with reviews of over 1,400 hotels. Thus, the model can be used for any hotel because it used over 515k reviews. Britannia International Hotel Canary Wharf can use our model to classify reviews at any point correctly. However, the most important takeaway here is the feature importance. Since guests tend to expect the same things in every hotel, we learned that words such as staff, location, comfortable, and dirty will make have a higher value in their reviews. The words also match the word cloud created for Britannia International Hotel Canary Wharf, which proves that the hotel, similarly to others, needs to focus on those words.
 
-I recommend the hotel start using word clouds to get quick insights from negative and positive reviews. The negative reviews can be used to improve the business and should be used as soon as possible if the hotel wants to increase their overall score. The hotel should also use positive reviews can be used for advertisement, for example.
+I recommend the hotel start using word clouds to get quick insights from negative and positive reviews. The negative reviews can be used to improve the business and should be used as soon as possible if the hotel wants to increase its overall score. The hotel should also use positive reviews that can be used for advertisement, for example.
 
 ## Conclusion
 
-- Machine learning can be used to correctly identify positive and negative reviews. However, identify with 100% confidence is difficult. My final model can be used for any hotel to find feature importance
+- Machine learning can be used to identify positive and negative reviews correctly. However, identity with 100% confidence is difficult. My final model can be used for any hotel to find feature importance
 - Word clouds can be used to understand what words appear the most in negative and positive reviews. The management can quickly take a look and get insights out of it.
-- The Britannia International Hotel Canary Wharf performes poorly in the reviews compared to other hotels in London. There is a lot of room for improvement.
+- The Britannia International Hotel Canary Wharf performs poorly in the reviews compared to other hotels in London. There is a lot of room for improvement.
 
 ## Next Steps:
 
 - Test the model in the whole data set as well as social media posts.
 - Create a recommendation system to the user based on reviews
-- Create a dashboard for guests and hotels easily get information about hotels.
+- Create a dashboard for guests and hotels to easily get information about hotels.
 
 ## Repository Content
 
@@ -235,6 +235,3 @@ If you have any questions or suggestions, please reach me out on:
 
 ## References
 Campos, D., Rocha Silva, R., and Bernadino, J., 2019. Text Mining in Hotel Reviews: Impact of Words Restriction in Text Classification. University of Coimbra, Coimbra, Portugal.
-
-
-
