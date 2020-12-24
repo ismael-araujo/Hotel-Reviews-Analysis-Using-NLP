@@ -223,6 +223,7 @@ I recommend the hotel start using word clouds to get quick insights from negativ
 │   ├── sentiment-analysis.ipynb  # contains sentiment analysis notebook
 ├── README.md                          # public-facing preview
 ├── final_notebook.ipynb               # final version of data cleaning, EDA, feature engineering, and modeling process
+├── functions.py              # functions used in the final notebook
 └── presentation.pdf    # deck
 ```
 ## For More Information or Suggestions
