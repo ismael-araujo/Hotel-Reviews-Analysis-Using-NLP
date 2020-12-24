@@ -22,7 +22,7 @@ This project will build a model that can correctly predict if a hotel review is 
 
 ### Setting the hypothetical scenario
 
-Our actual client is a hotel in London called Britannia International Hotel Canary Wharf. They have thousands of reviews and a 6.7 overall score on Booking.com. They think this is a low score compared to other London hotels, and they want to understand what is causing this low score. Due to COVID-19, they don't have the resources to read all the reviews and make sense of them. Thus, they want to find a way to get quick insights without having to read every review. They want to improve their hotel by looking at the most common words in the negative and positive reviews. They also want to know which words have the highest weight for all hotels in Europe in general, so they can understand not only their guests, but all guests in general.
+Our client is a hotel in London called Britannia International Hotel Canary Wharf. They have thousands of reviews and a 6.7 overall score on Booking.com. They think this is a low score compared to other London hotels, and they want to understand what is causing this low score. Due to COVID-19, they don't have the resources to read all the reviews and make sense of them. Thus, they want to find a way to get quick insights without having to read every review. They want to improve their hotel by looking at the most common words in the negative and positive reviews. They also want to know which words have the highest weight for all hotels in Europe in general, so they can understand not only their guests, but all guests in general.
 
 Business questions:
 
