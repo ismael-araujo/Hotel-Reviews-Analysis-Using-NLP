@@ -22,10 +22,12 @@ This project will build a model that can correctly predict if a hotel review is 
 
 ### Setting the hypothetical scenario
 
-Our actual client is a hotel in London called Britannia International Hotel Canary Wharf. They have thousands of reviews and a 6.7 overall score on Booking.com. They think this is a low score compared to other London hotels, and they want to understand what is causing this low score. Due to COVID-19, they don't have the resources to read all the reviews and make sense of them. Thus, they want to find a way to get quick insights without having to read every review. They have a few business questions:
+Our actual client is a hotel in London called Britannia International Hotel Canary Wharf. They have thousands of reviews and a 6.7 overall score on Booking.com. They think this is a low score compared to other London hotels, and they want to understand what is causing this low score. Due to COVID-19, they don't have the resources to read all the reviews and make sense of them. Thus, they want to find a way to get quick insights without having to read every review. They want to improve their hotel by looking at the most common words in the negative and positive reviews. They also want to know which words have the highest weight for all hotels in Europe in general, so they can understand not only their guests, but all guests in general.
 
-- Can we create a model that can correctly identify the most important features when predicting if a review is positive or negative for all the reviews we have available? What are these features?
-- What are the most mentioned words in negative and positive reviews? What insights could they get from them? How would a word cloud for negative and positive reviews look like for their hotel and in comparison to other hotels?
+Business questions:
+
+- Can we create a model that can correctly identify the most important features when predicting if a review is positive or negative for all hotels in general? What are these features?
+- What are the most mentioned words in negative and positive reviews? What insights could they get from them? How would a word cloud for negative and positive reviews?
 - How does the client score performs compared to other hotels in the city?
 
 #### Why Britannia International Hotel Canary Wharf?
@@ -203,6 +205,7 @@ I recommend the hotel start using word clouds to get quick insights from negativ
 - Test the model in the whole data set as well as social media posts.
 - Create a recommendation system to the user based on reviews
 - Create a dashboard for guests and hotels to easily get information about hotels.
+- Compare the word clouds of every hotel in Europe to Britannia International Hotel Canary Wharf.
 
 ## Repository Content
 
