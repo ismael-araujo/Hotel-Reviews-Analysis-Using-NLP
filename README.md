@@ -183,7 +183,7 @@ Looking at the confusion matrix, we can see that the model needs improvements cl
 
 ![](https://github.com/Ismaeltrevi/hotel-reviews-analysis-using-nlp/blob/main/images/confusion-matrix-final-model.png?raw=true)
 
-Now, let's take a look at the 50most important features for each class using ELI5.
+Now, let's take a look at the 50 most important features for each class using ELI5.
 
 Note: Weight is how important a feature is for each class. For the positive class. The 
 
