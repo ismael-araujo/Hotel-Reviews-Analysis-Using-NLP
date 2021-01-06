@@ -1,4 +1,4 @@
-# Hotel Review Analysis Using NLP and Machine Learning
+# Hotel Reviews Analysis Using NLP and Machine Learning
 
 #### Can hotels quickly get insights out of thousands of reviews?
 
