@@ -183,9 +183,60 @@ Looking at the confusion matrix, we can see that the model needs improvements cl
 
 ![](https://github.com/Ismaeltrevi/hotel-reviews-analysis-using-nlp/blob/main/images/confusion-matrix-final-model.png?raw=true)
 
+Now, let's take a look at the 50most important features for each class using ELI5.
 
+Note: Weight is how important a feature is for each class. For the positive class. The 
 
-The top 20 words (feature importance) for the model are negative, positive, great, excellent, staff, location, room, friendly, comfortable, poor, breakfast, dirty, good, helpful, small, lovely, nice, old, bad, and perfect. All these words make sense when we are talking about hotels. In fact, they are very similar to the words found in the word cloud.
+|Weight - Positive|	 Positive Feature|Weight - Negative |	Negative Feature|
+| ------------ | ------------ | ------------ | ------------ |
+|	6.092	|	Excellent	|	5.308	|	Dirty	|
+|	5.27	|	Great	|	4.277	|	Rude	|
+|	5.082	|	Amazing	|	3.543	|	Terrible	|
+|	5.01	|	Comfortable	|	3.451	|	Poor	|
+|	4.544	|	Lovely	|	3.248	|	Worst	|
+|	4.222	|	Bit	|	3.23	|	Tired	|
+|	4.15	|	Perfect	|	3.208	|	Old	|
+|	3.823	|	Spacious	|	3.105	|	Bad	|
+|	3.818	|	Loved	|	2.865	|	Basic	|
+|	3.596	|	Friendly	|	2.843	|	Uncomfortable	|
+|	3.407	|	Wonderful	|	2.83	|	Star	|
+|	3.221	|	Fantastic	|	2.801	|	Horrible	|
+|	2.963	|	Quiet	|	2.776	|	Money	|
+|	2.935	|	Brilliant	|	2.699	|	Paid	|
+|	2.896	|	Superb	|	2.631	|	Overpriced	|
+|	2.685	|	Nice	|	2.556	|	Awful	|
+|	2.674	|	Negative	|	2.428	|	Unfriendly	|
+|	2.61	|	Come	|	2.252	|	Charged	|
+|	2.56	|	Beautiful	|	2.234	|	Broken	|
+|	2.482	|	Modern	|	2.211	|	Management	|
+|	2.424	|	Helpful	|	2.133	|	Dated	|
+|	2.266	|	Little	|	2.118	|	Tiny	|
+|	2.235	|	Large	|	2.077	|	Work	|
+|	2.234	|	Fabulous	|	2.066	|	Run	|
+|	1.944	|	Cooked	|	2.064	|	Attitude	|
+
+### Positive Features
+
+The top features for predicting positive reviews weren't a surprise. Most of the features are adjectives that we can relate to positive reviews, such as excellent, great, and amazing. Although these words might not give much insight, some others are very related to hotels and can give us insights. Hotels should make sure that there are delivering this aspect to their guests. Let's check a few that I believe can carry insights:
+
+- Comfortable: The most important aspect of a hotel is comfortable, so the guest can rest
+- Bit: It doesn't carry much meaning
+- Spacious: It's good when a hotel has a spacious room
+- Friendly: It could be talking about how friendly the staff is, a very important aspect
+- Quiet: It seems like quiet places are something that guests are looking for
+- Negative: Although it is a negative word, I assume that the guests are saying that there isn't anything negative about the hotel
+- Modern: Modern hotels seem to be noticed in the reviews
+- Helpful: It's probably walking about the staff
+
+### Negative Features
+
+When looking at the top features for the negative class predictor, we can find words that everyone could expect from negative reviews such as awful, horrible, and bad. However, with the negative class feature predictor, we can have more insights and areas that every hotel should consider as critical. It's interesting to see that dirty has a higher weight than overpriced and dated.
+Let's take a look at a few features:
+
+- Dirty: It's the most crucial feature when predicting negative reviews. This means that dirty is a giant red flag.
+- Rude: Probably talking about the staff, which means that the hotel needs improvement in training
+- Old: It's probably related to the hotel being outdated
+- Overpriced: This is obvious to me. If people pay more money than they think it's worth, they will complain.
 
 
 ## Final Recommendations
