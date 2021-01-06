@@ -171,9 +171,25 @@ The Vanilla Models performed fairly well since the beginning with an accuracy of
 |Vanilla SVC CV	|0.783904|0.794234	|0.786862	|0.790531|
 |Vanilla Naive Bayes CV|0.781129	|0.793541	|0.780793	|0.787115|
 
+### Ensemble Models
+
+I tried multple ensemble models. My main focus was to find the most important features, so ensemble models were useful to find the best hyperparameters to tune the best vanilla models and understand how the models were behaving. Although GridSearch SVC was the model with the best accuracy, Logistic Regression is able to inform the best features for both negative and positive classification.
+
+|Models	|	Accuracy	|	Precision	|	Recall	|	F1 Score	|
+| ------------ | ------------ | ------------ | ------------ | ------------ |
+|	GridSearch SVC	|	0.826827	|	0.867271	|	0.786148	|	0.824719	|
+|	Voting	|	0.823497	|	0.86032	|	0.787219	|	0.822148	|
+|	GridSearch Logistic Regression	|	0.818316	|	0.851566	|	0.786505	|	0.817743	|
+|	GridSearch Random Forest - First Model	|	0.808511	|	0.846275	|	0.770439	|	0.806578	|
+|	GridSearch Random Forest - Second Model	|	0.809436	|	0.847937	|	0.770439	|	0.807333	|
+|	Gradient Boosting	|	0.780204	|	0.834786	|	0.717958	|	0.771977	|
+|	Bagging	|	0.769658	|	0.823897	|	0.706533	|	0.760715	|
+|	GridSearch ADABoost	|	0.731175	|	0.747067	|	0.727597	|	0.737204	|
+|	ADABoost and Random Forest	|	0.731175	|	0.747067	|	0.727597	|	0.737204	|
+
 ## Final Model
 
-Logistic Regression was the final model for its high accuracy and showed the feature importance for each class. The accuracy was 0.8183, which means that the model can correctly classify the target variable 81.83% of the time. Looking at cross-validation, we can see that the model performed similarly in the train set. I used 5 folds, and the range difference between the highest accuracy and lowest accuracy was a very small difference.
+Logistic Regression using GridSearch was the final model for its high accuracy and showed the feature importance for each class. The accuracy was 0.8183, which means that the model can correctly classify the target variable 81.83% of the time. Looking at cross-validation, we can see that the model performed similarly in the train set. I used 5 folds, and the range difference between the highest accuracy and lowest accuracy was a very small difference.
 
 |   |Accuracy   |Precision   |Recall   |F1 Score   |
 | ------------ | ------------ | ------------ | ------------ | ------------ |
