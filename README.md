@@ -173,15 +173,17 @@ The Vanilla Models performed fairly well since the beginning with an accuracy of
 
 ## Final Model
 
-I chose Random Forest as the final model. Although it didn't have the best accuracy, the feature importance are more interpretable. This model's accuracy was 0.8012, which means that the model can correctly classify the target variable 80.12% of the time. Looking at cross-validation, we can see that the model performed similarly in the train set. I used 5 folds, and the range difference between the highest accuracy and lowest accuracy was, which is a very small difference.
+Logistic Regression was the final model for its high accuracy and showed the feature importance for each class. The accuracy was 0.8183, which means that the model can correctly classify the target variable 81.83% of the time. Looking at cross-validation, we can see that the model performed similarly in the train set. I used 5 folds, and the range difference between the highest accuracy and lowest accuracy was a very small difference.
 
 |   |Accuracy   |Precision   |Recall   |F1 Score   |
 | ------------ | ------------ | ------------ | ------------ | ------------ |
-|Random Forest|0.801295 |0.8374364|0.7650838|0.7996268|
+|Logistic Regression|0.818316 |0.851565|0.7865048|0.8177431|
 
-Looking at the confusion matrix, we can see that the overall performance is ok. However, it tends to predict more False Positives than False Negatives. There is definitely room for improvement in next steps.
+Looking at the confusion matrix, we can see that the model needs improvements classifying Positive reviews, since it has a higher number of False Negatives compared to False Positives.
 
 ![](https://github.com/Ismaeltrevi/hotel-reviews-analysis-using-nlp/blob/main/images/confusion-matrix-final-model.png?raw=true)
+
+
 
 The top 20 words (feature importance) for the model are negative, positive, great, excellent, staff, location, room, friendly, comfortable, poor, breakfast, dirty, good, helpful, small, lovely, nice, old, bad, and perfect. All these words make sense when we are talking about hotels. In fact, they are very similar to the words found in the word cloud.
 
@@ -235,4 +237,5 @@ If you have any questions or suggestions, please reach me out on:
 
 ## References
 Campos, D., Rocha Silva, R., and Bernadino, J., 2019. Text Mining in Hotel Reviews: Impact of Words Restriction in Text Classification. University of Coimbra, Coimbra, Portugal.
+
 
