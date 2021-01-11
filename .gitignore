@@ -1,0 +1,23 @@
+# Ignore Mac system files
+.DS_store
+
+# Ignore node_modules folder
+node_modules
+
+# Ignore all text files
+*.txt
+
+# Ignore all csv files
+*.csv
+
+# Ignore files related to API keys
+.env
+
+# Ignore SASS config files
+.sass-cache
+
+# Ignore Checkpoints
+.ipynb_checkpoints
+
+# Ignore __pyache__
+__pycache__
