@@ -90,7 +90,7 @@ Since I had a classification problem, I first created a target feature with the 
 
 We can see that there is a significant class imbalance. Since our dataset is large, we can fix this using the pandas sample function. Thus, I will only use 12% of the positive reviews, which will get closer to the number of negative reviews, so it will get closer to the number of negative reviews.
 
-![Class Distribution - After](https://github.com/Ismaeltrevi/hotel-reviews-analysis-using-nlp/blob/main/images/class_distribution-after.png?raw=true "Class Distribution - After")
+<img align='center' alt='Class Distribution - After' src="https://github.com/Ismaeltrevi/hotel-reviews-analysis-using-nlp/blob/main/images/class_distribution-after.png?raw=true" width="50%" height="50%">
 
 We can see above that the class distribution problem was solved.
 
@@ -99,7 +99,7 @@ I wanted a few answers from the dataset and checked if I could find any patterns
 
 **What nationalities give the highest number of reviews?**
 
-![](https://github.com/Ismaeltrevi/hotel-reviews-analysis-using-nlp/blob/main/images/nationality.png?raw=true)
+<img align='center' alt='Class Distribution - After' src="https://github.com/Ismaeltrevi/hotel-reviews-analysis-using-nlp/blob/main/images/nationality.png?raw=true" width="75%" height="75%">
 
 Reviewers from the United Kingdom have the highest number of reviews left. To understand the main reason behind this, I checked where the hotels with the highest reviews are located. In the next image we can understand two things:
 - The hotels are located in only 6 countries only, not the whole of Europe, as I previously thought.
