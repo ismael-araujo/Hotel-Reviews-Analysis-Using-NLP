@@ -86,7 +86,7 @@ Since I had a classification problem, I first created a target feature with the 
 
 ### Class Distribution
 
-![Class Distribution - Before](https://github.com/Ismaeltrevi/hotel-reviews-analysis-using-nlp/blob/main/images/class_distribution-before.png?raw=true "Class Distribution - Before")
+<img align='center' alt='Class Distribution - Before' src="https://github.com/Ismaeltrevi/hotel-reviews-analysis-using-nlp/blob/main/images/class_distribution-before.png?raw=true" width="50%" height="50%">
 
 We can see that there is a significant class imbalance. Since our dataset is large, we can fix this using the pandas sample function. Thus, I will only use 12% of the positive reviews, which will get closer to the number of negative reviews, so it will get closer to the number of negative reviews.
 
@@ -197,7 +197,7 @@ Logistic Regression using GridSearch was the final model for its high accuracy a
 
 Looking at the confusion matrix, we can see that the model needs improvements classifying Positive reviews, since it has a higher number of False Negatives compared to False Positives.
 
-<img align='center' src="https://github.com/Ismaeltrevi/hotel-reviews-analysis-using-nlp/blob/main/images/confusion-matrix-final-model.png?raw=true" width="75%" height="75%">
+<img align='center' src="https://github.com/Ismaeltrevi/hotel-reviews-analysis-using-nlp/blob/main/images/confusion-matrix-final-model.png?raw=true" width="50%" height="50%">
 
 Now, let's take a look at the 50 most important features for each class using ELI5.
 
