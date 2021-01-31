@@ -197,7 +197,7 @@ Logistic Regression using GridSearch was the final model for its high accuracy a
 
 Looking at the confusion matrix, we can see that the model needs improvements classifying Positive reviews, since it has a higher number of False Negatives compared to False Positives.
 
-![](https://github.com/Ismaeltrevi/hotel-reviews-analysis-using-nlp/blob/main/images/confusion-matrix-final-model.png?raw=true)
+<img align='center' src="https://github.com/Ismaeltrevi/hotel-reviews-analysis-using-nlp/blob/main/images/confusion-matrix-final-model.png?raw=true" width="75%" height="75%">
 
 Now, let's take a look at the 50 most important features for each class using ELI5.
 
@@ -305,3 +305,4 @@ If you have any questions or suggestions, please reach me out on:
 
 ## References
 Campos, D., Rocha Silva, R., and Bernadino, J., 2019. Text Mining in Hotel Reviews: Impact of Words Restriction in Text Classification. University of Coimbra, Coimbra, Portugal. 
+
