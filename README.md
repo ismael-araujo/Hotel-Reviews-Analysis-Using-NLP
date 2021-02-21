@@ -7,9 +7,16 @@
 ![](https://github.com/Ismaeltrevi/hotel-reviews-analysis-using-nlp/blob/main/images/hotel-image.jpg?raw=true)
 
 ## Overview
-In this project, I will create a model that can predict if a hotel review is negative or positive so that hotels can use it to classify their reviews correctly. I will analyze a specific hotel in London and compare it to other hotels in London as well. We will walk through multiple Natural Language Processing to understand how we can use machines to read reviews and get insights out of it. Baseline models include Logistic Regression, Random Forest, Naive Bayes, and Support Vector Machine (SVM). Ensemble models include Voting, Bagging, GridSearch, AdaBoost, and Gradient Boosting. The final model was a GridSearch SVM with an accuracy of 0.8268 and F1-Score 0.8247.
+In this project, I will create a model that can predict if a hotel review is negative or positive so that hotels can use it to classify their reviews correctly. I will analyze a specific hotel in London and compare it to other hotels in the same city. We will walk through multiple Natural Language Processing to understand how we can use machines to read reviews and get insights from them. Baseline models include Logistic Regression, Random Forest, Naive Bayes, and Support Vector Machine (SVM). Ensemble models include Voting, Bagging, GridSearch, AdaBoost, and Gradient Boosting. The final model was a GridSearch SVM with an accuracy of 0.8268 and F1-Score 0.8247.
 
 This project walks through exploratory data analysis, data cleaning, sentiment analysis, data preprocessing, vanilla model, an ensemble model iterations. You can find a summary of the project in the final notebook.
+
+## Objectives
+1. Create a model that can classify reviews as positive and negative for every website using the same algorithm
+2. Discover the most important features for positive and bad reviews
+3. Find insights and areas for improvement for hotels from the reviews
+4. Create a web app where hotels can easily upload their reviews and get instantaneous insights (IN DEVELOPMENT)
+5. Create a recommendation system based on hotel reviews (IN DEVELOPMENT)
 
 ## Business Problem
 One of the biggest problems that many companies have been trying to overcome is how to take advantage of all the data collected from guests. The amount of data has challenged the travel industry. One type of data is reviews left by guests on websites such as Booking.com, TripAdvisor, and Yelp.
