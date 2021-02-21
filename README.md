@@ -91,11 +91,11 @@ Since I had a classification problem, I first created a target feature with the 
 
 ### Class Distribution
 
-<img align='center' alt='Class Distribution - Before' src="https://github.com/Ismaeltrevi/hotel-reviews-analysis-using-nlp/blob/main/images/class_distribution-before.png?raw=true" width="50%" height="50%">
+<img align='center' alt='Class Distribution - Before' src="https://github.com/Ismaeltrevi/hotel-reviews-analysis-using-nlp/blob/main/images/class_distribution-before.png?raw=true" width="75%" height="75%">
 
 We can see that there is a significant class imbalance. Since our dataset is large, we can fix this using the pandas sample function. Thus, I will only use 12% of the positive reviews, which will get closer to the number of negative reviews, so it will get closer to the number of negative reviews.
 
-<img align='center' alt='Class Distribution - After' src="https://github.com/Ismaeltrevi/hotel-reviews-analysis-using-nlp/blob/main/images/class_distribution-after.png?raw=true" width="50%" height="50%">
+<img align='center' alt='Class Distribution - After' src="https://github.com/Ismaeltrevi/hotel-reviews-analysis-using-nlp/blob/main/images/class_distribution-after.png?raw=true" width="75%" height="75%">
 
 We can see above that the class distribution problem was solved.
 
