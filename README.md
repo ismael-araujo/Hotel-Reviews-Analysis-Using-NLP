@@ -7,9 +7,11 @@ Any questions? Reach me out on my **[LinkedIn](https://www.linkedin.com/in/ismae
 
 #### Blogs:
 **[How to Run 30 Machine Learning Models with 2 Lines of Code](https://towardsdatascience.com/how-to-run-30-machine-learning-models-with-2-lines-of-code-d0f94a537e52 "How to Run 30 Machine Learning Models with 2 Lines of Code")**
+
 Learn how to run multiple machine learning models using lazy predict — code along
 
 **[How to Import All Python Libraries With One Line of Code](https://towardsdatascience.com/how-to-import-all-python-libraries-with-one-line-of-code-2b9e66a5879f "How to Import All Python Libraries With One Line of Code")**
+
 Learn how to import the 40 most important libraries using PyForest
 
 #### Repo Navigation:
