@@ -6,12 +6,17 @@
 
 ![](https://github.com/Ismaeltrevi/hotel-reviews-analysis-using-nlp/blob/main/images/hotel-image.jpg?raw=true)
 
-##### This project is expected to be concluded on January 6, 2021.
-
 ## Overview
-In this project, I will create a model that can predict if a hotel review is negative or positive so that hotels can use it to classify their reviews correctly. I will analyze a specific hotel in London and compare it to other hotels in London as well. We will walk through multiple Natural Language Processing to understand how we can use machines to read reviews and get insights out of it. Baseline models include Logistic Regression, Random Forest, Naive Bayes, and Support Vector Machine (SVM). Ensemble models include Voting, Bagging, GridSearch, AdaBoost, and Gradient Boosting. The final model was a GridSearch SVM with an accuracy of 0.8268 and F1-Score 0.8247.
+In this project, I will create a model that can predict if a hotel review is negative or positive so that hotels can use it to classify their reviews correctly. I will analyze a specific hotel in London and compare it to other hotels in the same city. We will walk through multiple Natural Language Processing to understand how we can use machines to read reviews and get insights from them. Baseline models include Logistic Regression, Random Forest, Naive Bayes, and Support Vector Machine (SVM). Ensemble models include Voting, Bagging, GridSearch, AdaBoost, and Gradient Boosting. The final model was a GridSearch SVM with an accuracy of 0.8268 and F1-Score 0.8247.
 
 This project walks through exploratory data analysis, data cleaning, sentiment analysis, data preprocessing, vanilla model, an ensemble model iterations. You can find a summary of the project in the final notebook.
+
+## Objectives
+1. Create a model that can classify reviews as positive and negative for every website using the same algorithm
+2. Discover the most important features for positive and bad reviews
+3. Find insights and areas for improvement for hotels from the reviews
+4. Create a web app where hotels can easily upload their reviews and get instantaneous insights (IN DEVELOPMENT)
+5. Create a recommendation system based on hotel reviews (IN DEVELOPMENT)
 
 ## Business Problem
 One of the biggest problems that many companies have been trying to overcome is how to take advantage of all the data collected from guests. The amount of data has challenged the travel industry. One type of data is reviews left by guests on websites such as Booking.com, TripAdvisor, and Yelp.
@@ -86,11 +91,11 @@ Since I had a classification problem, I first created a target feature with the 
 
 ### Class Distribution
 
-![Class Distribution - Before](https://github.com/Ismaeltrevi/hotel-reviews-analysis-using-nlp/blob/main/images/class_distribution-before.png?raw=true "Class Distribution - Before")
+<img align='center' alt='Class Distribution - Before' src="https://github.com/Ismaeltrevi/hotel-reviews-analysis-using-nlp/blob/main/images/class_distribution-before.png?raw=true" width="65%" height="65%">
 
 We can see that there is a significant class imbalance. Since our dataset is large, we can fix this using the pandas sample function. Thus, I will only use 12% of the positive reviews, which will get closer to the number of negative reviews, so it will get closer to the number of negative reviews.
 
-![Class Distribution - After](https://github.com/Ismaeltrevi/hotel-reviews-analysis-using-nlp/blob/main/images/class_distribution-after.png?raw=true "Class Distribution - After")
+<img align='center' alt='Class Distribution - After' src="https://github.com/Ismaeltrevi/hotel-reviews-analysis-using-nlp/blob/main/images/class_distribution-after.png?raw=true" width="65%" height="65%">
 
 We can see above that the class distribution problem was solved.
 
@@ -99,7 +104,7 @@ I wanted a few answers from the dataset and checked if I could find any patterns
 
 **What nationalities give the highest number of reviews?**
 
-![](https://github.com/Ismaeltrevi/hotel-reviews-analysis-using-nlp/blob/main/images/nationality.png?raw=true)
+<img align='center' alt='Hotel Nationalities' src="https://github.com/Ismaeltrevi/hotel-reviews-analysis-using-nlp/blob/main/images/nationality.png?raw=true" width="75%" height="75%">
 
 Reviewers from the United Kingdom have the highest number of reviews left. To understand the main reason behind this, I checked where the hotels with the highest reviews are located. In the next image we can understand two things:
 - The hotels are located in only 6 countries only, not the whole of Europe, as I previously thought.
@@ -197,7 +202,7 @@ Logistic Regression using GridSearch was the final model for its high accuracy a
 
 Looking at the confusion matrix, we can see that the model needs improvements classifying Positive reviews, since it has a higher number of False Negatives compared to False Positives.
 
-![](https://github.com/Ismaeltrevi/hotel-reviews-analysis-using-nlp/blob/main/images/confusion-matrix-final-model.png?raw=true)
+<img align='center' src="https://github.com/Ismaeltrevi/hotel-reviews-analysis-using-nlp/blob/main/images/confusion-matrix-final-model.png?raw=true" width="50%" height="50%">
 
 Now, let's take a look at the 50 most important features for each class using ELI5.
 
