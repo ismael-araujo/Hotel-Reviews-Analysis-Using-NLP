@@ -2,8 +2,6 @@
 
 #### Can hotels quickly get insights out of thousands of reviews?
 
-##### Author:  Ismael Araujo
-
 ![](https://github.com/Ismaeltrevi/hotel-reviews-analysis-using-nlp/blob/main/images/hotel-image.jpg?raw=true)
 
 ## Overview
